@@ -1,0 +1,94 @@
+Data Science is a combination of mathematics, statistics, machine learning, and computer science. 
+Data Science is basically convert business problem into data problem then collect, analyze, visualize and build the model so that it can help decision-makers to make  decisions.
+
+Machine learning is a technique that uses mathematics and statistics to create a model that can predict unknown values.
+
+Types of machine learning
+There are two general approaches to machine learning, supervised and unsupervised machine learning. In both approaches, you train a model to make predictions.
+
+The supervised machine learning approach requires you to start with a dataset with known label values. Two types of supervised machine learning tasks include regression and classification.
+
+Regression: used to predict a continuous value; like a price, a sales total, or some other measure.
+Classification: used to determine a class label; an example of a binary class label is whether a patient has diabetes or not; an example of multi-class labels is classifying text as positive, negative, or neutral.
+
+The unsupervised machine learning approach starts with a dataset without known label values. One type of unsupervised machine learning task is clustering.
+
+Clustering: used to determine labels by grouping similar information into label groups; like grouping measurements from birds into species.
+--------------------------------------------------------------------------------------------------------------------------
+
+OOP concepts help organize code, improve code reusability, and make it easier to manage and understand complex programs. Python's support for OOP allows developers to create well-structured, maintainable, and scalable applications.
+
+Class:
+
+A blueprint or template that defines the structure and behavior of objects.
+It encapsulates data (attributes) and functions (methods) that operate on that data.
+
+Object:
+An instance of a class, representing a real-world entity.
+Each object has its own unique state and can access the methods defined in its class.
+
+Inheritance:
+A mechanism where a class (subclass) inherits attributes and methods from another class (superclass).
+Subclass can override or extend superclass methods.
+
+Encapsulation:
+The concept of bundling data and methods together within a class, hiding the internal implementation details from the outside world.
+It provides data protection and restricts direct access to the object's attributes.
+
+Polymorphism:
+The ability of objects to take on multiple forms or behaviors based on the context.
+In Python, it allows different classes to implement the same method name, but each behaves differently.
+
+Abstraction:
+The process of simplifying complex reality by providing a clear and easy-to-use interface for interacting with objects.
+Users can work with objects without worrying about their internal implementation.
+
+Constructor (init method):
+A special method in a class that initializes the object's attributes when it is created.
+It's called automatically when creating a new object from the class.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+parameters are internal setting of a ml model that learn from data during training the model
+it represent models' internal knlowledge.
+
+hyperparameter are the external setting or configuration of a ml model that are set before trainig model control models behaviours & architecture.
+
+
+
+
+
+Azure Machine Learning is a cloud-based service that helps simplify some of the tasks it takes to prepare data, train a model, and deploy a predictive service.
+Azure Machine Learning studio is a web portal for machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage.
+
+At its core, Azure Machine Learning is a service for training and managing machine learning models, for which you need compute on which to run the training process.
+
+Compute targets are cloud-based resources on which you can run model training and data exploration processes.
+
+In Azure Machine Learning studio, you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
+
+Compute Instances: Development workstations that data scientists can use to work with data and models.
+Compute Clusters: Scalable clusters of virtual machines for on-demand processing of experiment code.
+Inference Clusters: Deployment targets for predictive services that use your trained models.
+Attached Compute: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
+
+**In Azure Machine Learning, operations that you run are called jobs. **
+
+** In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a data asset. You can create your own data asset in Azure Machine Learning studio.**
+
+
+-- Evaluate performance
+After training a model, it is important to evaluate its performance. There are many performance metrics and methodologies for evaluating how well a model makes predictions. You can review evaluation metrics on the completed job page by right-clicking on the Evaluate model component.
+
+- Mean Absolute Error (MAE): The average difference between predicted values and true values. This value is based on the same units as the label, in this case dollars. The lower this value is, the better the model is predicting.
+
+- Root Mean Squared Error (RMSE): The square root of the mean squared difference between predicted and true values. The result is a metric based on the same unit as the label (dollars). When compared to the MAE (above), a larger difference indicates greater variance in the individual errors (for example, with some errors being very small, while others are large).
+
+- Relative Squared Error (RSE): A relative metric between 0 and 1 based on the square of the differences between predicted and true values. The closer to 0 this metric is, the better the model is performing. Because this metric is relative, it can be used to compare models where the labels are in different units.
+
+- Relative Absolute Error (RAE): A relative metric between 0 and 1 based on the absolute differences between predicted and true values. The closer to 0 this metric is, the better the model is performing. Like RSE, this metric can be used to compare models where the labels are in different units.
+
+- Coefficient of Determination (R2): This metric is more commonly referred to as R-Squared, and summarizes how much of the variance between predicted and true values is explained by the model. The closer to 1 this value is, the better the model is performing.
